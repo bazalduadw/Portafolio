@@ -1,0 +1,48 @@
+body{
+    background: #edeff2;
+    color: white;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+header{
+    background: #232532;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+main article{
+    color: black;
+    background: white;
+    padding: 20px;
+}
+
+main article p{
+    margin-bottom: 20px;
+}
+
+aside{
+    background: #7aa54c;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.widgets .widget{
+    background: #4f5ef5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer{
+    background: darkblue;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}

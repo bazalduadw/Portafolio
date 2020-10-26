@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion con Ionic4</title>
+    <!-- ESTILOS CSS DE IONIC -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+<body>
+    
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="success">
+                <ion-buttons slot="start">
+                    <ion-button>
+                        <ion-icon name="logo-ionic"></ion-icon>
+                    </ion-button> 
+                </ion-buttons>
+                <ion-title>App Productos</ion-title>
+                <ion-buttons slot="end">
+                    <ion-button>
+                        <p style="margin-right: 7px;">Total: $<span id="total">0</span></p>
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </ion-button> 
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <ion-grid>
+                <ion-Row>
+                    <ion-Col size-md="4" offset-lg="4">
+                        <ion-card color="light">
+                            <ion-card-header color="secondary">
+                                <ion-card-title>
+                                    Producto Nuevo
+                                </ion-card-title>
+                            </ion-card-header >
+                            <ion-card-content>
+                                <ion-item class="ion-margin-vertical">
+                                    <ion-label position="floating">
+                                        Nombre del Producto
+                                    </ion-label>
+                                    <ion-input type="text" id="productName">
+                                    </ion-input>
+                                </ion-item>
+
+                                <ion-item>
+                                    <ion-label position="floating">
+                                        Precio del Producto
+                                    </ion-label>
+                                    <ion-input type="number" id="productPrice">
+                                    </ion-input>
+                                </ion-item>
+
+                                <ion-button color="secondary" id="button-save">
+                                    <ion-icon name="add-circle" slot="start"></ion-icon> Guardar
+                                </ion-button>
+
+                                <ion-button color="danger" fill="outline" id="button-cancel">
+                                    <ion-icon name="trash" slot="start"></ion-icon> Vaciar
+                                </ion-button>
+
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-Col>
+                </ion-Row>
+                <ion-Row>
+                    <ion-Col size-md="4" offset-md="4">
+                        <ion-List id="product-list">
+
+                        </ion-List>
+                    </ion-Col>
+                </ion-Row>
+            </ion-grid>
+        </ion-content>
+    </ion-app>
+
+
+    <!-- SCRIPTS DE IONIC -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <!-- MAIN SCRIPT -->
+    <script src="app.js"></script>
+</body>
+</html>
