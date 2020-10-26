@@ -20,7 +20,7 @@ $(document).ready(function(){
     $('#btn-certificaciones').on('click', function(e){
         e.preventDefault()
         $('html, body').animate({
-            scrollTop: certificaciones
+            scrollTop: certificaciones + 2800
         }, 500);
     });
 })
