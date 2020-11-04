@@ -101,7 +101,8 @@ header .contenedor-texto .texto .profesion {
         line-height: 34px;
 }
 .main .acerca-de .texto .bold {
-        color: #308add;
+        color: #3188da;
+        text-decoration: none;
 }
 .main .trabajos {
         padding: 60px 0;
