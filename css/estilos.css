@@ -16,7 +16,7 @@ body {
 }
 /* HEADER */
 header {
-        background: url(../img/bg.jpg), #49a3d6;
+        background: url(../img/bg/bg.jpg), #49a3d6;
         background-repeat: no-repeat;
         background-position: center;
         max-height: 600px;
@@ -102,53 +102,170 @@ header .contenedor-texto .texto .profesion {
 }
 .main .acerca-de .texto .bold {
         color: #3188da;
+        text-decoration: underline;
 }
-.main .trabajos {
-        padding: 60px 0;
-        background: rgba(172, 163, 163, 0.541);
+
+.practicas{
+        background: rgb(200, 200, 206);
+        padding: 20px 0;
+        height: auto;
 }
-.main .trabajos .contenedor {
-        overflow: hidden;
-}
-.main .trabajos .titulo {
+
+.practicas .titulo-portafolio{
         font-size: 34px;
-        margin-bottom: 40px;
         font-weight: 300;
         color: #323068;
         text-align: center;
         line-height: 34px;
+        padding: 10px;
 }
-.main .trabajos .contenedor-trabajos {
+
+/* INPUTS DE LAS PRACTICAS */
+input[type="radio"]{
+        display: none;
+    }
+    
+    .container-category{
+        width: 100%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-}
-.main .trabajos .contenedor-trabajos .trabajo {
-        width: 23%;
-}
-.main .trabajos .contenedor-trabajos .trabajo .thumb {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    
+    .container-category label{
+        padding: 6px 40px;
+        margin: 10px;
+        font-size: 17px;
+        background: #e2e2e2;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+  
+    .container-category label:hover{
+        opacity: 0.8;
+    }
+    
+    
+    
+    /*Post - Publicaciones*/  
+    .posts{
         width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
         margin-top: 20px;
-        margin-bottom: 20px;
-}
-.main .trabajos .contenedor-trabajos .trabajo .thumb img {
+        padding-bottom: 20px;
+    }
+    
+    .posts .post{
+        background: rgba(255, 255, 255, 0.205);
+        box-shadow: 0 0 20px -20px black;
+        border-radius: 6px;
+        overflow: hidden;
+        padding-bottom: 20px;
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+    
+    .post .ctn-img{
         width: 100%;
-        vertical-align: top;
-        border-radius: 7px;
-}
-.main .trabajos .contenedor-trabajos .trabajo .descripcion {
+    }
+    
+    .post .ctn-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .post h2{
+        margin-top: 10px;
+        padding: 0px 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #000000;
         text-align: center;
-}
-.main .trabajos .contenedor-trabajos .trabajo .nombre {
-        font-weight: bold;
-        margin-bottom: 10px;
-}
-.main .trabajos .contenedor-trabajos .trabajo .categoria {
+    }
+    
+    .post span{
+        display: block;
+        margin-top: 10px;
+        padding: 0px 20px;
+    }
+    
+    .ctn-tag{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+    
+    .ctn-tag li{
+        list-style: none;
         font-size: 14px;
-        color: #636363;
-        font-weight: bold;
-}
+        margin: 4px;
+        padding: 6px 10px;
+        background: #e8e8e8;
+        cursor: default;
+    }
+    
+    
+    .post button{
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 10px 50px;
+        font-size: 16px;
+        background: #46a2fd;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        outline: none;
+    }
+    
+    .post button:hover{
+        opacity: 0.9;
+    }
+    
+    /*sistema de filtrado*/
+    
+    [value="TODOS"]:checked ~ .posts .post[data-category]{
+        display: block;
+    }
+    
+    [value="HTML-CSS"]:checked ~ .posts .post:not([data-category~="HTML-CSS"]),
+    [value="BS-IONIC"]:checked ~ .posts .post:not([data-category~="BS-IONIC"]),
+    [value="JS"]:checked ~ .posts .post:not([data-category~="JS"]){
+        display: none;
+    }
+    
+    [value="TODOS"]:checked ~ .container-category [for="TODOS"],
+    [value="HTML-CSS"]:checked ~ .container-category [for="HTML-CSS"],
+    [value="BS-IONIC"]:checked ~ .container-category [for="BS-IONIC"],
+    [value="JS"]:checked ~ .container-category [for="JS"]{
+        background: #46a2fd;
+        color: #fff;
+    }
+    
+    @media screen and (max-width: 1200px){
+        .posts{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    @media screen and (max-width: 900px){
+        .posts{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media screen and (max-width: 580px){
+        .posts{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
 
 .certificados{
         padding: 20px;
@@ -165,7 +282,7 @@ header .contenedor-texto .texto .profesion {
 
 .certificados .titulo-certificado .titulo{
         font-size: 34px;
-        margin: 25px;
+        margin-bottom: 40px;
         font-weight: 300;
         color: #dd8202;
         text-align: center;
