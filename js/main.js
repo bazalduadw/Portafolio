@@ -19,8 +19,14 @@ $(document).ready(function(){
 
     $('#btn-certificaciones').on('click', function(e){
         e.preventDefault()
-        $('html, body').animate({
-            scrollTop: certificaciones + 2800
-        }, 500);
+        if (screen.width <= 450) {
+            $('html, body').animate({
+                scrollTop: certificaciones + 3600
+            }, 500);
+        } else {
+            $('html, body').animate({
+                scrollTop: certificaciones + 30
+            }, 500);
+        }    
     });
 })
