@@ -268,57 +268,58 @@ input[type="radio"]{
 
 
 .certificados{
-        padding: 20px;
+        padding: 40px;
 }
 
-.certificados .udemy{
-        display: flex;
-        text-align: center;
-}
 
-.certificados .certificado{
-        margin: 10px;
-}
-
-.certificados .titulo-certificado .titulo{
+.certificados .certificados-name{
         font-size: 34px;
         margin-bottom: 40px;
         font-weight: 300;
         color: #dd8202;
         text-align: center;
         line-height: 34px;
-}
-
-.certificados .certificado .nombre{
-        font-size: 23px;
-        font-weight: 300;
-        color: #323068;
+        justify-content: center;
         text-align: center;
 }
 
-.certificados .certificado .descripcion{
-        font-size: 17px;
-        font-weight: 300;
-        color: #323068;
-        text-align: center;
-}
-
-.certificados .certificado p{
-        margin-top: 10px;
-}
-        
-
-.certificados .certificado .img-certificado{
+.certificados .con-certificados{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        padding: 5px;
+        margin: 20px 0px;
+        box-shadow:0px 0px 2px 1px rgba(51, 168, 189, 0.623);
+        border-radius: 10px;
 }
 
-.certificados .certificado .img-certificado img{
+
+.certificados .con-certificados .info-certificado{
+        width: 50%;
+        text-align: center;
+}
+
+.certificados .con-certificados .info-certificado h2{
+        font-size: 25px;
+        font-weight: 300;
+        color: #323068;
+        text-align: center;
+        line-height: 34px;
+        padding: 10px;
+}
+
+.certificados .con-certificados .img-certificado{
+        width:400px;
+}
+
+.certificados .con-certificados .img-certificado img{
         vertical-align: top;
-        width: 80%;
-
+        width: 100%;
+        border-radius: 10px;
 }
+
 footer .redes-sociales {
         background: #610707;
         padding: 10px 0; 
@@ -366,16 +367,37 @@ footer .redes-sociales .contenedor .instagram:hover {
         align-content: center;
         }
 
-        .certificados .udemy{
+
+}
+
+@media screen and (max-width: 650px) {
+        .certificados .con-certificados{
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                flex-wrap: wrap;
+        }
+        
+        
+        .certificados .con-certificados .info-certificado{
+                width: 50%;
+                text-align: center;
+        }
+        
+        .certificados .con-certificados .info-certificado h2{
+                font-size: 25px;
         }
 
-        .certificados .certificado{
+        .certificados .con-certificados .info-certificado{
                 width: 100%;
+                text-align: center;
         }
 
+        .certificados .con-certificados .info-certificado h2{
+                font-size: 20px;
+        }
+
+        .certificados .con-certificados .img-certificado{
+                width:100%;
+        }
 }
 
 @media screen and (max-width: 500px) {
@@ -411,11 +433,6 @@ footer .redes-sociales .contenedor .instagram:hover {
         flex-direction: column;
         }
         
-        .certificados .certificado .img-certificado img{
-                vertical-align: top;
-                width: 100%;
-        
-        }
 
         footer .redes-sociales .contenedor {
                 flex-wrap: wrap; }
