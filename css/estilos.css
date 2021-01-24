@@ -268,7 +268,8 @@ input[type="radio"]{
 
 
 .certificados{
-        padding: 40px;
+        padding: 40px 0px;
+        width: 100%;
 }
 
 
@@ -283,15 +284,21 @@ input[type="radio"]{
         text-align: center;
 }
 
-.certificados .con-certificados{
+.certificados .all-certificados{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        padding: 5px;
-        margin: 20px 0px;
-        box-shadow:0px 0px 2px 1px rgba(51, 168, 189, 0.623);
+        
+}
+
+.certificados .con-certificados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 10px;
 }
 
@@ -302,12 +309,12 @@ input[type="radio"]{
 }
 
 .certificados .con-certificados .info-certificado h2{
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 300;
         color: #323068;
         text-align: center;
         line-height: 34px;
-        padding: 10px;
+        margin: 10px 0;
 }
 
 .certificados .con-certificados .img-certificado{
@@ -351,6 +358,7 @@ footer .redes-sociales .contenedor .github:hover {
 footer .redes-sociales .contenedor .instagram:hover {
             background: #3f729b; 
 }
+
 
 @media screen and (max-width: 800px) {
         header .menu {
