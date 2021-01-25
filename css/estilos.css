@@ -234,14 +234,14 @@ input[type="radio"]{
     }
     
     [value="HTML-CSS"]:checked ~ .posts .post:not([data-category~="HTML-CSS"]),
-    [value="BS-IONIC"]:checked ~ .posts .post:not([data-category~="BS-IONIC"]),
+    [value="REACT"]:checked ~ .posts .post:not([data-category~="REACT"]),
     [value="JS"]:checked ~ .posts .post:not([data-category~="JS"]){
         display: none;
     }
     
     [value="TODOS"]:checked ~ .container-category [for="TODOS"],
     [value="HTML-CSS"]:checked ~ .container-category [for="HTML-CSS"],
-    [value="BS-IONIC"]:checked ~ .container-category [for="BS-IONIC"],
+    [value="REACT"]:checked ~ .container-category [for="REACT"],
     [value="JS"]:checked ~ .container-category [for="JS"]{
         background: #46a2fd;
         color: #fff;
