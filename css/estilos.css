@@ -327,9 +327,57 @@ input[type="radio"]{
         border-radius: 10px;
 }
 
-footer .redes-sociales {
+footer {
         background: #610707;
         padding: 10px 0; 
+}
+
+footer .info-contacto {
+        text-align: center;
+}
+
+footer .info-contacto h2{
+        font-size: 40px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+        line-height: 34px;
+        margin: 10px 0;
+}
+
+footer .info-contacto p{
+        font-size: 20px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+        line-height: 34px;
+        margin: 10px 0;
+}
+
+footer .info-contacto a{
+        font-size: 20px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+        line-height: 34px;
+        margin: 10px 0;
+        text-decoration: none;
+}
+
+footer .info-contacto a:hover{
+        font-size: 20px;
+        font-weight: 300;
+        color: #f0803f;
+        text-align: center;
+        line-height: 34px;
+        margin: 10px 0;
+        text-decoration: none;
+}
+
+footer .redes-sociales {
+        background: #610707;
+        margin: 20px 0px;
+        
 }
 footer .redes-sociales .contenedor {
         display: flex;
