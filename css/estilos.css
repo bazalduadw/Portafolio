@@ -102,7 +102,7 @@ header .contenedor-texto .texto .profesion {
 }
 .main .acerca-de .texto .bold {
         color: #3188da;
-        text-decoration: underline;
+        text-decoration: none;
 }
 
 .practicas{
