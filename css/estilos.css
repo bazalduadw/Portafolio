@@ -235,14 +235,16 @@ input[type="radio"]{
     
     [value="HTML-CSS"]:checked ~ .posts .post:not([data-category~="HTML-CSS"]),
     [value="REACT"]:checked ~ .posts .post:not([data-category~="REACT"]),
-    [value="JS"]:checked ~ .posts .post:not([data-category~="JS"]){
+    [value="JS"]:checked ~ .posts .post:not([data-category~="JS"]),
+    [value="WP"]:checked ~ .posts .post:not([data-category~="WP"]){
         display: none;
     }
     
     [value="TODOS"]:checked ~ .container-category [for="TODOS"],
     [value="HTML-CSS"]:checked ~ .container-category [for="HTML-CSS"],
     [value="REACT"]:checked ~ .container-category [for="REACT"],
-    [value="JS"]:checked ~ .container-category [for="JS"]{
+    [value="JS"]:checked ~ .container-category [for="JS"],
+    [value="WP"]:checked ~ .container-category [for="WP"]{
         background: #46a2fd;
         color: #fff;
     }
