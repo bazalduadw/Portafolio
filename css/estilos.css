@@ -107,7 +107,7 @@ header .contenedor-texto .texto .profesion {
 
 .practicas{
         background: rgb(200, 200, 206);
-        padding: 20px 0;
+        padding: 70px 0;
         height: auto;
 }
 
@@ -117,7 +117,6 @@ header .contenedor-texto .texto .profesion {
         color: #323068;
         text-align: center;
         line-height: 34px;
-        padding: 10px;
 }
 
 /* INPUTS DE LAS PRACTICAS */
@@ -270,7 +269,7 @@ input[type="radio"]{
 
 
 .certificados{
-        padding: 40px 0px;
+        padding: 70px 0px;
         width: 100%;
 }
 
@@ -330,7 +329,7 @@ input[type="radio"]{
 
 footer {
         background: #610707;
-        padding: 10px 0; 
+        padding: 100px 0; 
 }
 
 footer .info-contacto {
